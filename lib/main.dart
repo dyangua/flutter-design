@@ -1,3 +1,4 @@
+import 'package:desing/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,6 +9,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Desing',
+      initialRoute: '',
+      routes: {'': (BuildContext context) => HomePage()},
     );
   }
 }
